@@ -1,0 +1,109 @@
+.carsWrapper {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  margin-left: 25px;
+  max-height: 590px;
+}
+
+.sparesConteiner:nth-child(3n + 1) {
+  order: 1;
+}
+.sparesConteiner:nth-child(3n + 2) {
+  order: 2;
+}
+.sparesConteiner:nth-child(3n) {
+  order: 3;
+}
+.sparesConteinerCliced:nth-child(3n + 1) {
+  order: 1;
+}
+.sparesConteinerCliced:nth-child(3n + 2) {
+  order: 2;
+}
+.sparesConteinerCliced:nth-child(3n) {
+  order: 3;
+}
+.carsWrapper::before,
+.carsWrapper::after {
+  content: "";
+  flex-basis: 100%;
+  width: 0;
+  order: 2;
+}
+
+.sparesConteiner {
+  width: 280px;
+
+  .sparesItem {
+    width: 168px;
+    height: 425px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    color: #333333;
+    margin-right: 11px;
+  }
+  .buttonImageWrapper {
+    float: right;
+    .buttonImage {
+      width: 19px;
+      height: 19px;
+      object-fit: contain;
+    }
+  }
+}
+.sparesConteinerCliced {
+  width: 330px;
+  height: 90px;
+  box-shadow: 0 0 30px 0 rgba(122, 122, 122, 0.28);
+  background-color: #ffffff;
+  padding-left: 29px;
+  padding-top: 19px;
+  .carDetails {
+    width: 94px;
+    height: 20px;
+    opacity: 0.5;
+    font-family: Roboto;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    color: #333333;
+  }
+  .sparesItem {
+    width: 183px;
+    height: 25px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    color: #1a77d2;
+  }
+  .buttonImageWrapper {
+    float: right;
+    margin-right: 36px;
+    .buttonImage {
+      width: 19px;
+      height: 19px;
+      object-fit: contain;
+    }
+  }
+}
+hr {
+  display: block;
+  width: 280px;
+  height: 1px;
+  opacity: 0.75;
+  background-color: #e5e5e5;
+  margin-top: 51px;
+}

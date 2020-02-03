@@ -1,0 +1,30 @@
+.main{
+ display: flex;
+ flex-direction: column;
+ width:auto;
+  height: 814px;
+  background-color: #ffffff;
+}
+
+.newCarsButton{
+  margin-top: 58px;
+  margin-left: 40%;
+  margin-bottom: 100px;
+  padding: 20px 40px 20px 40px;
+  width: 290px;
+  height: 60px;
+  border-radius: 3px;
+  background-color: #f5f5f5;
+  
+    width: 208px;
+    height: 20px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #1a77d2;
+  
+}
