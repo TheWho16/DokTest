@@ -8,7 +8,7 @@ const SpareItem = props => {
   const checkCars = () => {
     setCheck(!checked);
   };
-  const { id, name, details } = props;
+  const { id, name, details, text } = props;
   return (
     <div
       className={checked ? "sparesConteinerCliced" : "sparesConteiner"}
@@ -23,7 +23,12 @@ const SpareItem = props => {
           alt="button"
         />
       </span>
-      {checked ? <div className="carDetails">более {details} </div> : null}
+      {checked ? (
+        <>
+          <div className="carDetails">более {details} </div>
+          <div className="txet">{text}</div>
+        </>
+      ) : null}
 
       {checked ? null : <hr />}
     </div>

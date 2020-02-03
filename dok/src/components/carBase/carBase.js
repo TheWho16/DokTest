@@ -80,7 +80,7 @@ export default class carBase {
         id: 16,
         name: 'Maserati',
         details: 12341,
-        text: 'ты попал на деньги'
+        text: 'попал на деньги'
       },
       {
         id: 17,

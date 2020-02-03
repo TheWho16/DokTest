@@ -51,8 +51,8 @@
   .buttonImageWrapper {
     float: right;
     .buttonImage {
-      width: 19px;
-      height: 19px;
+      width: 14px;
+      height: 14px;
       object-fit: contain;
     }
   }
@@ -98,7 +98,12 @@
       object-fit: contain;
     }
   }
+  .txet{
+    line-height: 1;
+    opacity: 0.2;
+  }
 }
+
 hr {
   display: block;
   width: 280px;
