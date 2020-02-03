@@ -1,3 +1,49 @@
-@import 'components/app/app.scss';
-@import 'components/header/header.scss';
-@import 'components/spares/spares.scss';
+@import "components/app/app.scss";
+@import "components/header/header.scss";
+@import "components/spares/spares.scss";
+
+@media only screen and (max-width: 992px) {
+  .main {
+      
+    width: 750px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+  }
+  .header{
+      margin: auto;
+   
+      width: 298px;
+      height: 96px;
+      font-family: Roboto;
+      font-size: 24px;
+      font-weight: 500;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.33;
+      letter-spacing: normal;
+      color: #000000;
+      margin-bottom: 30px;
+  }
+  .carsWrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: min-content;
+    height: max-content;
+    box-sizing: content-box;
+    margin-left: 30%;
+  }
+
+  .newCarsButton {
+    display: block;
+    position: absolute;
+    left: 32%;
+    margin: auto;
+    top: 1740px;
+  }
+  .sparesConteinerCliced {
+    margin-right: 12%;
+  }
+}
