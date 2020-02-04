@@ -10,9 +10,7 @@ constructor(props){
 }
 
 
-  componentDidMount(){
- 
-  }
+
  
 render(){
   let cars = this.state.stateData.cars.map(c => (
