@@ -156,14 +156,14 @@
     }
   }
   .sparesConteiner:hover {
-    min-width: 375px;
+    min-width: 425px;
     padding-top: 22px;
     margin-top: -12px;
     margin-left: -10px;
   }
   .buttonImageWrapperBlue {
     .buttonImage{
-      padding-right: 45px;
+      padding-right: 95px;
     }
    
   }
@@ -195,8 +195,17 @@
     
   }
 }
-@media only screen and (max-width: 325px) {
+@media only screen and (max-width: 375px) {
+  .sparesConteiner:hover {
+    min-width: 375px;
+  }
   .newCarsButton {
     margin-left: 50px;
+  }
+  .buttonImageWrapperBlue {
+    .buttonImage{
+      padding-right: 45px;
+    }
+   
   }
 }
