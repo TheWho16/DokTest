@@ -12,6 +12,9 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   }
+  hr{
+    width: 100%;
+  }
   .sparesConteiner:hover {
   
     margin-top: -12px;
