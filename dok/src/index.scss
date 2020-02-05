@@ -2,144 +2,186 @@
 @import "components/header/header.scss";
 @import "components/spares/spares.scss";
 
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 2480px) {
   .main {
-      
-    width: 750px;
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-  }
-  .header{
-      margin: auto;
-   
-      width: 298px;
-      height: 96px;
-      font-family: Roboto;
-      font-size: 24px;
-      font-weight: 500;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.33;
-      letter-spacing: normal;
-      color: #000000;
-      margin-bottom: 30px;
+    width: 1440px;
+    height: 814px;
   }
   .carsWrapper {
+    width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  }
+  .sparesConteiner:hover {
+  
+    margin-top: -12px;
+    margin-left: -1px;
+  }
+}
+@media only screen and (max-width: 1439px) {
+  .main {
+    width: 1000px;
+
     display: flex;
-    flex-direction: row;
-    height: 100%;
-    width: min-content;
-    height: max-content;
-    box-sizing: content-box;
-    margin-left: 30%;
+  }
+  .carsWrapper {
+    width: 1000px;
+    display: grid;
+    grid-column-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   }
 
-  .newCarsButton {
-    display: block;
-    position: absolute;
-    left: 32%;
-    margin: auto;
-    top: 1740px;
-    margin-bottom: 89px;
+  .sparesConteiner {
+    max-width: 330px;
+    margin-left: 30px;
+    max-height: 90px;
+    padding-top: 19px;
+    .sparesItem {
+      width: 168px;
+      height: 425px;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.56;
+      letter-spacing: normal;
+      color: #333333;
+      margin-right: 11px;
+    }
+    .buttonImageWrapperBlue {
+      display: none;
+    }
+    .buttonImageWrapper {
+      float: right;
+      margin-top: 14px;
+      margin-right: 20px;
 
+      .buttonImage {
+        width: 14px;
+        height: 14px;
+        object-fit: contain;
+      }
+    }
+    hr {
+      display: block;
+      width: 280px;
+      height: 1px;
+      opacity: 0.75;
+      background-color: #e5e5e5;
+      margin-top: 51px;
+      margin-left: -1px;
+    }
   }
-  .sparesConteinerCliced {
-    margin-right: 12%;
+  .txet {
+    display: none;
+  }
+  .carDetails {
+    display: none;
+  }
+  .sparesConteiner:hover {
+    max-width: 330px;
+    height: 90px;
+    box-shadow: 0 0 30px 0 rgba(122, 122, 122, 0.28);
+    background-color: #ffffff;
+    padding-top: 19px;
+    padding-left: 29px;
+    margin-top: -12px;
+    margin-left: -1px;
+    hr {
+      display: none;
+    }
+    .carDetails {
+      display: block;
+      width: 94px;
+      height: 20px;
+      opacity: 0.5;
+      font-family: Roboto;
+      font-size: 13px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.54;
+      letter-spacing: normal;
+      color: #333333;
+    }
+    .sparesItem {
+      width: 183px;
+      height: 25px;
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.56;
+      letter-spacing: normal;
+      color: #1a77d2;
+    }
+    .buttonImageWrapperBlue {
+      display: block;
+      float: right;
+      margin-right: 20px;
+      margin-top: 14px;
+      .buttonImage {
+        width: 19px;
+        height: 19px;
+        object-fit: contain;
+      }
+    }
+    .buttonImageWrapper {
+      display: none;
+    }
+    .txet {
+      display: block;
+      line-height: 1;
+      opacity: 0.2;
+    }
   }
 }
 
-@media only screen and (max-width: 768px) {
-    .main {
-        
-      width: 450px;
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      justify-content: center;
-    }
-    .header{
-        margin: auto;
-     
-        width: 298px;
-        height: 96px;
-        font-family: Roboto;
-        font-size: 24px;
-        font-weight: 500;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.33;
-        letter-spacing: normal;
-        color: #000000;
-        margin-bottom: 30px;
-    }
-    .carsWrapper {
-        display: flex;
-        flex-direction: row;
-        height: 100%;
-        width: min-content;
-        height: max-content;
-        box-sizing: content-box;
-        margin-left: 17%;
-        float: none
-    }
-  
-    .newCarsButton {
-      display: block;
-      position: absolute;
-      left: 32%;
-      margin-top: 2%;
-      margin: auto;
-      top: 1740px;
-      margin-bottom: 89px;
-
-    }
-    .sparesConteinerCliced {
-      margin-right: 12%;
+@media only screen and (max-width: 425px) {
+  .main {
+    width: 100%;
+    height: 753px;
+    margin-top: 46px;
+  }
+  .carsWrapper {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    hr {
+      width: 92%;
     }
   }
-
-  @media only screen and (max-width: 480px) {
-    .main {
-        
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-      justify-content: center;
-    }
-    .header{
-        width: 298px;
-        height: 96px;
-        font-family: Roboto;
-        font-size: 24px;
-        font-weight: 500;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.33;
-        letter-spacing: normal;
-        color: #000000;
-    }
-    .carsWrapper {
-      display: flex;
-      flex-direction: row;
-      height: 100%;
-      width: 300px;
-      box-sizing: content-box;
-      float:none;
-    }
+  .sparesConteiner:hover {
+    
+    padding-top: 22px;
+    margin-top: -11px;
   
-    .newCarsButton {
-      display: block;
-      position: absolute;
-      left: 32%;
-      margin: auto;
-      margin-bottom: 89px;
-      top: 1740px;
-    }
-    .sparesConteinerCliced {
-      margin-right: 12%;
-    }
+  
+  }
+  .buttonImageWrapperBlue{
+    padding-left: 100px;
+  }
+  .sparesConteiner {
+    width: 100%;
+    margin-left: -10px;
+    padding-top: 10px;
+    padding-left: 7%;
     
   }
+  .header {
+    margin-left: 25px;
+    width: 298px;
+    height: 96px;
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.33;
+    letter-spacing: normal;
+    color: #000000;
+    margin-bottom: 7px;
+  }
+}

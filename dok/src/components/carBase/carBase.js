@@ -92,6 +92,36 @@ export default class carBase {
         name: 'Mazda',
         details: 4321000
       },
+      {
+        id: 19,
+        name: 'Opel',
+        details: 25400
+      },
+      {
+        id: 20,
+        name: 'SsangYong',
+        details: 666
+      },
+      {
+        id: 21,
+        name: 'Volvo',
+        details: 1421
+      },
+      {
+        id: 22,
+        name: 'Mersedes',
+        details: 12341,
+      },
+      {
+        id: 23,
+        name: 'Jaguar',
+        details: 200034
+      },
+      {
+        id: 24,
+        name: 'Mazda',
+        details: 4321000
+      },
     ]
   
 

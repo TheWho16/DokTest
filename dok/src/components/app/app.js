@@ -12,7 +12,7 @@ const cars = new carBase()
       <div className="main"> 
         <Header />
         <Spares cars={cars}/>
-        <div className='newCarsButton'>Запчасти для других марок</div>
+        <div className='newCarsButton'><p>Запчасти для других марок</p></div>
       </div>
     );
   }

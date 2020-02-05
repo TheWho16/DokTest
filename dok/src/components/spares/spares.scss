@@ -1,40 +1,16 @@
 .carsWrapper {
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  margin-left: 25px;
-  max-height: 590px;
-}
-
-.sparesConteiner:nth-child(3n + 1) {
-  order: 1;
-}
-.sparesConteiner:nth-child(3n + 2) {
-  order: 2;
-}
-.sparesConteiner:nth-child(3n) {
-  order: 3;
-}
-.sparesConteinerCliced:nth-child(3n + 1) {
-  order: 1;
-}
-.sparesConteinerCliced:nth-child(3n + 2) {
-  order: 2;
-}
-.sparesConteinerCliced:nth-child(3n) {
-  order: 3;
-}
-.carsWrapper::before,
-.carsWrapper::after {
-  content: "";
-  flex-basis: 100%;
-  width: 0;
-  order: 2;
+  width: 1000px;
+  display: grid;
+  grid-column-gap: 5px;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  
 }
 
 .sparesConteiner {
-  width: 280px;
-
+  max-width: 330px;
+  margin-left: 30px;
+  max-height: 90px;
+  padding-top: 19px;
   .sparesItem {
     width: 168px;
     height: 425px;
@@ -48,23 +24,50 @@
     color: #333333;
     margin-right: 11px;
   }
+  .buttonImageWrapperBlue {
+    display: none;
+  }
   .buttonImageWrapper {
     float: right;
+    margin-top: 14px;
+    margin-right: 20px;
+
     .buttonImage {
       width: 14px;
       height: 14px;
       object-fit: contain;
     }
   }
+  hr {
+    display: block;
+    width: 280px;
+    height: 1px;
+    opacity: 0.75;
+    background-color: #e5e5e5;
+    margin-top: 51px;
+    margin-left: -1px;
+  }
 }
-.sparesConteinerCliced {
-  width: 330px;
+
+.txet {
+  display: none;
+}
+.carDetails {
+  display: none;
+}
+.sparesConteiner:hover {
+  max-width: 330px;
   height: 90px;
   box-shadow: 0 0 30px 0 rgba(122, 122, 122, 0.28);
   background-color: #ffffff;
-  padding-left: 29px;
   padding-top: 19px;
+  padding-left: 29px;
+  z-index: 2;
+  hr {
+    display: none;
+  }
   .carDetails {
+    display: block;
     width: 94px;
     height: 20px;
     opacity: 0.5;
@@ -89,26 +92,48 @@
     letter-spacing: normal;
     color: #1a77d2;
   }
-  .buttonImageWrapper {
+  .buttonImageWrapperBlue {
+    display: block;
     float: right;
-    margin-right: 36px;
+    margin-right: 20px;
+    margin-top: 14px;
     .buttonImage {
       width: 19px;
       height: 19px;
       object-fit: contain;
     }
   }
-  .txet{
+  .buttonImageWrapper {
+    display: none;
+  }
+  .txet {
+    display: block;
     line-height: 1;
     opacity: 0.2;
   }
 }
 
-hr {
-  display: block;
-  width: 280px;
-  height: 1px;
-  opacity: 0.75;
-  background-color: #e5e5e5;
-  margin-top: 51px;
+.newCarsButton {
+  width: 290px;
+  height: 60px;
+  align-self: center;
+  margin-top: 56px;
+  margin-bottom: 74px;
+
+  border-radius: 3px;
+  background-color: #f5f5f5;
+  p {
+    margin-top: 20px;
+    margin-left: 40px;
+    width: 208px;
+    height: 20px;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.25;
+    letter-spacing: normal;
+    color: #1a77d2;
+  }
 }

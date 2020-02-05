@@ -7,30 +7,36 @@ const SpareItem = props => {
 
   const checkCars = () => {
     setCheck(!checked);
+    console.log("переход на страницу выбора автозапчатей");
   };
   const { id, name, details, text } = props;
   return (
     <div
-      className={checked ? "sparesConteinerCliced" : "sparesConteiner"}
+      className="sparesConteiner"
       key={id}
     >
       <span className="sparesItem">Запчаcти на {name}</span>
       <span className="buttonImageWrapper">
         <img
           onClick={checkCars}
-          src={checked ? buttonImageBlue : buttonImageBlack}
+          src={buttonImageBlack}
           className="buttonImage"
           alt="button"
         />
       </span>
-      {checked ? (
-        <>
-          <div className="carDetails">более {details} </div>
-          <div className="txet">{text}</div>
-        </>
-      ) : null}
+      <span className="buttonImageWrapperBlue">
+        <img
+          onClick={checkCars}
+          src={buttonImageBlue}
+          className="buttonImage"
+          alt="button"
+        />
+      </span>
 
-      {checked ? null : <hr />}
+      <div className="carDetails">более {details} </div>
+      <div className="txet">{text}</div>
+
+      <hr />
     </div>
   );
 };
